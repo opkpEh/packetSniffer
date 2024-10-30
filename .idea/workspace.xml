@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88f8daad-e239-4309-a0d0-78d1e6d9d52c" name="Changes" comment="file initilized">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="88f8daad-e239-4309-a0d0-78d1e6d9d52c" name="Changes" comment="basic strucutre made">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730268218894</updated>
-      <workItem from="1730268220366" duration="2347000" />
+      <workItem from="1730268220366" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="file initilized">
       <option name="closed" value="true" />
@@ -84,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730273140803</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="basic strucutre made">
+      <option name="closed" value="true" />
+      <created>1730274357706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730274357706</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="file initilized" />
-    <option name="LAST_COMMIT_MESSAGE" value="file initilized" />
+    <MESSAGE value="basic strucutre made" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic strucutre made" />
   </component>
 </project>
