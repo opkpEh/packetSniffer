@@ -9,6 +9,7 @@ parser= argparse.ArgumentParser(description='Network Packet Sniffer')
 
 #adds a new command line argument --ip for this file
 parser.add_argument("--ip", help="IP address to sniff on",type=str, required=True)
+parser.add_argument("--proto", help="protocol to sniff (TCP/ICMP)", required=True, type=str, choices=['tcp','icmp'])
 
 #stores the passed arguments in opts when the script is run
 opts=  parser.parse_args()
@@ -36,7 +37,7 @@ class Packet:
 
         self.dst_addr= ipaddress.ip_address(self.dst)
 
-        self.protocol_map= {1: "ICMP"}
+        self.protocol_map= {1: "ICMP", 6: "TCP"}
 
         try:
             self.protocol= self.protocol_map[self.prot]
@@ -48,7 +49,10 @@ class Packet:
         print(f'Protocol: {self.protocol} {self.src_addr} -> {self.dst_addr}')
 
 def sniff(host):
-    socket_protocol = socket.IPPROTO_ICMP
+    if opts.proto=="tcp":
+        socket_protocol = socket.IPPROTO_TCP
+    else:
+        socket_protocol = socket.IPPROTO_ICMP
     sniffer= socket.socket(socket.AF_INET, socket.SOCK_RAW, socket_protocol)
     sniffer.bind((host,0))
     sniffer.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
