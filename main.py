@@ -44,8 +44,27 @@ class Packet:
             print(f'{e} No protocol found for {self.prot}')
             self.protocol= str(self.prot)
 
-def sniff():
-    pass
+    def print_header_short(self):
+        print(f'Protocol: {self.protocol} {self.src_addr} -> {self.dst_addr}')
+
+def sniff(host):
+    socket_protocol = socket.IPPROTO_ICMP
+    sniffer= socket.socket(socket.AF_INET, socket.SOCK_RAW, socket_protocol)
+    sniffer.bind((host,0))
+    sniffer.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
+
+    try:
+        while True:
+            raw_data= sniffer.recv(65535)
+            packet= Packet(raw_data)
+            packet.print_header_short()
+
+            if KeyboardInterrupt:
+                sys.exit(0)
+    except KeyboardInterrupt:
+        sys.exit(0)
+
+
 
 if __name__=="__main__":
-    sniff()
+    sniff(opts.ip)
