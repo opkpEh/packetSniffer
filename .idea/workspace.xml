@@ -47,6 +47,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -78,7 +79,10 @@
       <workItem from="1730268220366" duration="4795000" />
       <workItem from="1730311787608" duration="2504000" />
       <workItem from="1730315041319" duration="946000" />
-      <workItem from="1730381389609" duration="6524000" />
+      <workItem from="1730381389609" duration="6761000" />
+      <workItem from="1730560670550" duration="366000" />
+      <workItem from="1730562595352" duration="33000" />
+      <workItem from="1731601931871" duration="3043000" />
     </task>
     <task id="LOCAL-00001" summary="file initilized">
       <option name="closed" value="true" />
@@ -117,5 +121,8 @@
     <MESSAGE value="file initilized" />
     <MESSAGE value="basic strucutre made" />
     <option name="LAST_COMMIT_MESSAGE" value="basic strucutre made" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/packetSniffer$main.coverage" NAME="main Coverage Results" MODIFIED="1730560749509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
